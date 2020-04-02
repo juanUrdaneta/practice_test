@@ -1,4 +1,4 @@
-const naiveString = (string, substr) => {
+const naiveString = (string, substr) => {//search substr inside string looping only once through the array.
   let match = 0;
   let count = 0;
   for(char of string){

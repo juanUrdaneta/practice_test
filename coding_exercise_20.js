@@ -1,4 +1,4 @@
-const nestedEvenSum = obj => {
+const nestedEvenSum = obj => {//sum all the even numbers nested inside the object
   const nums = [];
   let x = 0;
 

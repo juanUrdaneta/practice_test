@@ -1,4 +1,4 @@
-const sameFrequency = (num1, num2) => {
+const sameFrequency = (num1, num2) => {//checks if both args have the same numbers inside regardless of order.
   if (num1.toString().split("").length !== num2.toString().split("").length)
     return false;
 
@@ -18,7 +18,6 @@ const sameFrequency = (num1, num2) => {
       n2O[item] = (n2O[item] || 0) + 1;
     });
 
-  console.log(n1O,n2O);
   for (let key in n1O) {
     if (!n2O[key]) return false;
     if (n1O[key] !== n2O[key]) return false;

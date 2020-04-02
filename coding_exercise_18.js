@@ -1,4 +1,4 @@
-const flatten = arrs => {
+const flatten = arrs => {//receive array nested inside arrays. return a single array with all the memebers
   let final = [];
 
   const helper = args => {

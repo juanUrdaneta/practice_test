@@ -1,5 +1,4 @@
-//sliding window
-const maxSubarraySum = (arr, size) => {
+const maxSubarraySum = (arr, size) => {//gets the max sum of n size of consecutives elements of array 'arr'
   let sum = 0;
   let tempSum = 0;
 
@@ -9,8 +8,6 @@ const maxSubarraySum = (arr, size) => {
     tempSum += arr[i];
   }
   sum = tempSum;
-  //toma el valor de la primera secuencia
-  //empieza a iterar sobre el numero qeu sigue (size)
   for (let i = size; i < arr.length; i++) {
     tempSum = tempSum + arr[i] - arr[i - size];
     sum = tempSum > sum ? tempSum : sum;

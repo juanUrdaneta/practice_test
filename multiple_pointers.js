@@ -1,4 +1,4 @@
-const countUniqueVal = vals => {
+const countUniqueVal = vals => {//count how many different values are inside vals
   let i = 0;
   let j = 1;
 

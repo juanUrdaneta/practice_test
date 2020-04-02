@@ -1,4 +1,4 @@
-const isPalindrome = (str) => {
+const isPalindrome = (str) => {//use recursion to figure out whether str is a palindrome or not.
   if (str.length <= 1)return true;
   return Boolean((str[0] === str[str.length-1]) * isPalindrome(str.slice(1,-1)))
 };

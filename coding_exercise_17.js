@@ -1,6 +1,6 @@
 const isOdd = val => val % 2 !== 0;
 
-const someRecursive = (arr,callback) => {
+const someRecursive = (arr,callback) => {//return true if any number in the array is odd
   if(arr.length === 0) return false;
   return callback(arr[0]) ? true : someRecursive(arr.slice(1),callback);
 }

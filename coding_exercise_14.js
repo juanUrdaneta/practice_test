@@ -1,4 +1,4 @@
-const fib = (num,prev = 0,current = 1) => {
+const fib = (num,prev = 0,current = 1) => {//get the n'th (num) number of the fibonacci sequence
   if (num === 1) return current;
   let actual = prev + current;
   return fib(num - 1, current, actual);

@@ -1,41 +1,25 @@
-//LO HICISTE AL REVEZ
-const isSubsequence = (str1,str2) => {
+const isSubsequence = (str1,str2) => {//checks if the characters in str1 appera in str2 in the same order regardless of interruptions
   let a = 0;
   let b = 0;
-  while(a<str1.length){
-    if(b === str2.length){
+  while(a<str1.split('').length){
+    if(b === str2.split('').length){
       return false;
-    }else if(str1[a] === str2[b]){
-      if(a == str1.length-1){
+    }else if(str1.split('')[a] === str2.split('')[b]){
+      if(a == str1.split('').length-1){
         return true;
       }else{
         a++;
         b++;
       }
+    }else{
+      b++;
     }
-    b++;
   }
   return false;
 };
 
-function isSubsequenceB(str1, str2) {
-  var i = 0;
-  var j = 0;
-  if (!str1) return true;
-  while (j < str2.length) {
-    if (str2[j] === str1[i]) i++;
-    if (i === str1.length) return true;
-    j++;
-  }
-  return false;
-}
 
 console.log(isSubsequence('abcd','abcdf'));
 console.log(isSubsequence('aFbc','abcf'));
 console.log(isSubsequence('sing','sting'));
 console.log(isSubsequence('abc','abracadabra'));
-
-console.log(isSubsequenceB('abcd','abcdf'));
-console.log(isSubsequenceB('aFbc','abcf'));
-console.log(isSubsequenceB('sing','sting'));
-console.log(isSubsequenceB('abc','abracadabra'));

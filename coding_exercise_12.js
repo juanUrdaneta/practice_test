@@ -1,4 +1,4 @@
-const productOfArray = args =>{
+const productOfArray = args =>{//use recursion to calc the product of an array
   if (args.length === 0)  return 1;
   return args[0] * productOfArray(args.slice(1));
 }

@@ -1,4 +1,4 @@
-const linearSearch = (arr,val) => {
+const linearSearch = (arr,val) => {//perform a linear search on arr to find val
   for (let i = 0; i < arr.length; i++){
     if(arr[i] === val) return i;
   }

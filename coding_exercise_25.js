@@ -1,4 +1,4 @@
-const binarySearch = (arr,val) => {
+const binarySearch = (arr,val) => {//perform a binary search on arr to find val
   let left = 0;
   let rigth = arr.length - 1;
   if(arr[left] === val) return left;

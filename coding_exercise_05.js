@@ -1,9 +1,7 @@
-const averagePair = (args,avg) => {
-  //iterar sobre el array usando multiple pointers.
+const averagePair = (args,avg) => {//get the pair of consecutive numbers in the first arg that avg the second arg
   for (let index = 0; index < args.length; index++){
     let j = index+1;
     while (j<args.length) {
-      console.log(args[index] / args[j],args[j] / args[index])
       if((args[index] + args[j])/2 == avg) return true;
       j++;
     }
